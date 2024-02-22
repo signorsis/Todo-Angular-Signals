@@ -10,5 +10,9 @@ export const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
 }
-
+,
+{
+    path: 'detail/:id',
+    loadComponent: ()=>import('./detail/detail.component').then((d)=>d.DetailComponent)
+}
 ];

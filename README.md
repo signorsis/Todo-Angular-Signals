@@ -1,27 +1,29 @@
-# AngularstartTodo
+# A Simple Todo app using Signals
+ This is a simple to-do app that implements Routing and Uses a service for managing the state of a todo app
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.7.
+## Uses Signals for implimenting State managment
+
+  I implemented Signals to keep track of the  Apps state.
+
+## Routes
+  The App has Two Routes that are lazily loaded
+  1, Home 2,Details
+
+## To check out the app fork the Repository
+     
+  Run `npm install`
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

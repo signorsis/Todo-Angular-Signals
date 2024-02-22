@@ -8,11 +8,42 @@ import { TodoListComponent } from './ui/todo-list/todo-list/todo-list.component'
   standalone: true,
   imports: [TodoFormComponent, TodoListComponent],
   template: `
-    <h1>Todo</h1>
-    <app-todo-form (todoSubmitted)="todoService.addTodo($event)"></app-todo-form>
-    <app-todo-list [todos]="todoService.todos()"> </app-todo-list>
+    <h1>Todos</h1>
+    <div class="main">
+
+      <div  class="todo-form">
+        <app-todo-form (todoSubmitted)="todoService.addTodo($event)"></app-todo-form>
+      </div>
+      <div class='todo-list'>
+        <app-todo-list [todos]="todoService.todos()"> </app-todo-list>
+      </div>
+    </div>
   `,
-  styles: ``
+  styles: `
+  :host {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .main {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+  }
+  .todo-form {
+    border-right: 2px solid gray;
+  }
+  .todo-list {
+    display: flex;
+    justify-content: center;
+
+  }
+  
+
+
+  `
 })
 export default class HomeComponent {
 
